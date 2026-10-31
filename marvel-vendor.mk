@@ -48,10 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_effects.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_policy_configuration.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_effects.conf \
-    vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_effects.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano/audio_policy_configuration.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_volcano_qssi/audio_policy_configuration.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
     vendor/motorola/marvel/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
@@ -1756,25 +1752,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.accelerometer.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.barometer.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.compass.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.dynamic.head_tracker.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.gyroscope.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.hifi_sensors.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.light.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.accelerometer.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.barometer.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.compass.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.gyroscope.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.hifi_sensors.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.light.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.proximity.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepcounter.xml \
-    vendor/motorola/marvel/proprietary/vendor/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_volcano/android.hardware.sensor.stepdetector.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.ambient_temperature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.ambient_temperature.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.barometer.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/permissions/unavail.android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.hifi_sensors.xml \
@@ -2278,3 +2255,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/wifi/wfdr2_regex.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wfdr2_regex.conf \
     vendor/motorola/marvel/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+# ROM bring-up: stock 36-31 top-level VINTF and first-stage fstab. The vendor
+# tree previously shipped only VINTF fragments; these are the authoritative
+# stock files extracted from A171WEH.36-31.
+PRODUCT_COPY_FILES += \
+    vendor/motorola/marvel/proprietary/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml \
+    vendor/motorola/marvel/proprietary/vendor/etc/vintf/manifest_volcano.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_volcano.xml \
+    vendor/motorola/marvel/proprietary/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
+    vendor/motorola/marvel/proprietary/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
