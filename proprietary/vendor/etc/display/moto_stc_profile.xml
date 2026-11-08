@@ -1,0 +1,7 @@
+<MotoStcConfigs>
+    <config id="panelList" description="Supported Panel List">
+        <prim>mipi_mot_vid_boe_1272p_dsc_678_144hz</prim>
+        <prim>mipi_mot_vid_tm_1272p_dsc_678_144hz</prim>
+        <prim>mipi_mot_vid_csot_1272p_dsc_678_144hz</prim>
+    </config>
+</MotoStcConfigs>

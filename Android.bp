@@ -1,11 +1,675 @@
-//
-// Copyright (C) 2026 The LineageOS Project
-//
-// SPDX-License-Identifier: Apache-2.0
-//
-
 soong_namespace {
-    imports: [
-        "device/motorola/marvel",
-    ],
 }
+
+install_symlink {
+    name: "marvel_vendor_symlink_00",
+    installable: true,
+    vendor: true,
+    installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so",
+    symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_01",
+    installable: true,
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wcn6450/WCNSS_evt_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/wcn6450/WCNSS_evt_cfg.ini",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_02",
+    installable: true,
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wcn6450/WCNSS_prc_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/wcn6450/WCNSS_prc_cfg.ini",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_03",
+    installable: true,
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wcn6450/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/wcn6450/WCNSS_qcom_cfg.ini",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_04",
+    installable: true,
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wcn6450/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/wcn6450/wlan_mac.bin",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_05",
+    installable: true,
+    vendor: true,
+    installed_location: "firmware/wlanmdsp.otaupdate",
+    symlink_target: "/data/vendor/firmware/wlanmdsp.mbn",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_06",
+    installable: true,
+    vendor: true,
+    installed_location: "lib/modules",
+    symlink_target: "/vendor_dlkm/lib/modules",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_07",
+    installable: true,
+    vendor: true,
+    installed_location: "lib64/libEGL_adreno.so",
+    symlink_target: "egl/libEGL_adreno.so",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_08",
+    installable: true,
+    vendor: true,
+    installed_location: "lib64/libGLESv2_adreno.so",
+    symlink_target: "egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_09",
+    installable: true,
+    vendor: true,
+    installed_location: "lib64/libq3dtools_adreno.so",
+    symlink_target: "egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_10",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_11",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_12",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_13",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_14",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/apq/gnss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_15",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/apq/gnss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_16",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_17",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/lpass",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_18",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_19",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_20",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/adsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_21",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/adsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_22",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_23",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/cdsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_24",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_25",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_26",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/cdsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_27",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/cdsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_28",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_29",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_30",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_31",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_32",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/mpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_33",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/mpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_34",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_35",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/slpi",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_36",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_37",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_38",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/slpi",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_39",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/slpi/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_40",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_41",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/tn",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_42",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_43",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_44",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/tn",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_45",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/tn/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_46",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_47",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/wpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_48",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_49",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_50",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/mdm/wpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_51",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/mdm/wpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_52",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_53",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/lpass",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_54",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_55",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_56",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/adsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_57",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/adsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_58",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_59",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/cdsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_60",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_61",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_62",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/cdsp",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_63",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/cdsp/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_64",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_65",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/modem",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_66",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_67",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readonly/fsg",
+    symlink_target: "/fsg",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_68",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_69",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readonly/vendor/fsg",
+    symlink_target: "/vendor/fsg",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_70",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/mpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_71",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/mpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_72",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_73",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/slpi",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_74",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_75",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_76",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/slpi",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_77",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/slpi/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_78",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/hlos",
+    symlink_target: "/mnt/vendor/persist/hlos_rfs/shared",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_79",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/ramdumps",
+    symlink_target: "/data/vendor/tombstones/rfs/wpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_80",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/readonly/firmware",
+    symlink_target: "/vendor/firmware_mnt",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_81",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/readonly/vendor/firmware",
+    symlink_target: "/vendor/firmware",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_82",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/readwrite",
+    symlink_target: "/mnt/vendor/persist/rfs/msm/wpss",
+}
+
+install_symlink {
+    name: "marvel_vendor_symlink_83",
+    installable: true,
+    vendor: true,
+    installed_location: "rfs/msm/wpss/shared",
+    symlink_target: "/mnt/vendor/persist/rfs/shared",
+}
+

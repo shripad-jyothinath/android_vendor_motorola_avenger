@@ -1,0 +1,12 @@
+service vendor.keymint-strongbox /vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp
+    class early_hal
+    user vendor_nxp_strongbox
+    group vendor_nxp_strongbox
+    disabled
+
+on init && property:ro.boot.strongbox_support=true
+    setprop ro.strongbox.manufacturer "NXP"
+    setprop ro.strongbox.model "SN220"
+
+on post-fs && property:ro.boot.strongbox_support=true
+    start vendor.keymint-strongbox

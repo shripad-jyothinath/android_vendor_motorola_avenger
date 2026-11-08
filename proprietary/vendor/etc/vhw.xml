@@ -134,7 +134,7 @@
 			<string name="felica/.system">ro.vendor.hw.</string>
 			<string-array name="felica/.range">
 				<item>true</item>
-				<item>false</item>re
+				<item>false</item>
 			</string-array>
 
 			<string name="nfc/.auto">key=hwid;index=2;map=1:nq,2:nq,3:nq,4:nq,5:nq,6:ese_nq,7:nq,8:nq</string>

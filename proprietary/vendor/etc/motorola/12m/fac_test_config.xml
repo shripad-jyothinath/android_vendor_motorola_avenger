@@ -344,7 +344,6 @@
     <PAT>
         <com.motorola.motocit.display.testPatterns.WhiteWithBlackBorder/>
         <com.motorola.motocit.vibrator.VibratorTest/>
-        <com.motorola.motocit.capsense.CapsenseMul/>
     </PAT>
     <PAT2>
         <com.motorola.motocit.audio.AudioLoopBack/>
@@ -354,7 +353,6 @@
         <com.motorola.motocit.BtWifiGpsScan/>
         <com.motorola.motocit.audio.AudioPlayMediaFile2/>
         <com.motorola.motocit.audio.AudioEar/>
-        <com.motorola.motocit.version.Version/>
         <com.motorola.motocit.display.testPatterns.Medium/>
         <com.motorola.motocit.display.testPatterns.Bright/>
         <com.motorola.motocit.display.testPatterns.Grayscale/>
@@ -365,7 +363,6 @@
         <com.motorola.motocit.display.testPatterns.XtalkInterferingHorizontal/>
         <com.motorola.motocit.display.testPatterns.XtalkInterferingVertical/>
         <com.motorola.motocit.display.testPatterns.XtalkR/>
-        <com.motorola.motocit.touchscreen.Touch_MXT224/>
         <com.motorola.motocit.light.FrontLight/>
         <com.motorola.motocit.proximity.Proximity/>
         <com.motorola.motocit.sensor.AccelGyroMagSensor/>
@@ -373,12 +370,9 @@
         <com.motorola.motocit.capsense.CapsenseMul/>
         <com.motorola.motocit.vibrator.VibratorTest/>
         <com.motorola.motocit.camera2.Front1ViewfinderStrobe/>
-        <com.motorola.motocit.camera2.Front1VideoCapture/>
         <com.motorola.motocit.camera2.Rear1ViewfinderStrobe/>
-        <com.motorola.motocit.camera2.Rear1VideoCapture/>
         <com.motorola.motocit.camera2.Rear1ViewfinderTorch/>
         <com.motorola.motocit.camera2.Rear2ViewfinderStrobe/>
-        <com.motorola.motocit.camera2.Rear2VideoCapture/>
         <com.motorola.motocit.touchpanel.Touch_TP/>
         <com.motorola.motocit.simcard.Sim4Seq/>
         <com.motorola.motocit.barcode.Barcode/>

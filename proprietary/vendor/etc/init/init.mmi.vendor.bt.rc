@@ -1,0 +1,24 @@
+on property:ro.product.is_production=false && property:persist.log.tag.bluetooth=verbose
+    setprop persist.vendor.service.bdroid.snooplog true
+    setprop persist.vendor.service.bdroid.fwsnoop true
+    setprop persist.vendor.service.bdroid.soclog 7
+
+on property:ro.product.is_production=false && property:persist.log.tag.bluetooth=debug
+    setprop persist.vendor.service.bdroid.snooplog true
+    setprop persist.vendor.service.bdroid.fwsnoop true
+    setprop persist.vendor.service.bdroid.soclog 7
+
+on property:ro.product.is_production=false && property:persist.log.tag.bluetooth=warning
+    setprop persist.vendor.service.bdroid.snooplog false
+    setprop persist.vendor.service.bdroid.fwsnoop false
+    setprop persist.vendor.service.bdroid.soclog 0
+
+on property:ro.product.is_production=false && property:persist.log.tag.bluetooth=info
+    setprop persist.vendor.service.bdroid.snooplog false
+    setprop persist.vendor.service.bdroid.fwsnoop false
+    setprop persist.vendor.service.bdroid.soclog 0
+
+on property:ro.product.is_production=false && property:persist.log.tag.bluetooth=error
+    setprop persist.vendor.service.bdroid.snooplog false
+    setprop persist.vendor.service.bdroid.fwsnoop false
+    setprop persist.vendor.service.bdroid.soclog 0

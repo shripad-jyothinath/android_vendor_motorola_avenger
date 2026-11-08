@@ -1,5 +1,0 @@
-<exceptions>
-    <exception package="com.motorola.ccc.ota">
-        <permission name="android.permission.POST_NOTIFICATIONS" fixed="true"/>
-    </exception>
-</exceptions>

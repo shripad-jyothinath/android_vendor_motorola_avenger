@@ -1384,3 +1384,126 @@ INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','133'
 INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','135','','');
 
 
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='67' where property='qcrildb_version';
+
+INSERT OR REPLACE  INTO "qcril_emergency_source_voice_table" VALUES('510','129','','full');
+INSERT OR REPLACE  INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('510','10','129','','');
+INSERT OR REPLACE  INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('510','10','119','','');
+
+
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='68' where property='qcrildb_version';
+
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '452' AND NUMBER = '113';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '452' AND NUMBER = '114';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '452' AND NUMBER = '115';
+
+
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='69' where property='qcrildb_version';
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '110';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '123';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '125';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '704' AND MNC = '01' AND NUMBER = '128';
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '110';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '123';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '125';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '704' AND NUMBER = '128';
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '706' AND MNC = '01' AND NUMBER = '123';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '706' AND MNC = '01' AND NUMBER = '132';
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '706' AND NUMBER = '123';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '706' AND NUMBER = '132';
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '112';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '104';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '106';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '107';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '108';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '109';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '111';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '115';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '116';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '117';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '118';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '130';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '131';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '133';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '134';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '135';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '136';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '137';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '138';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '143';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '150';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '708' AND MNC = '001' AND NUMBER = '177';
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '104';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '106';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '107';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '108';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '109';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '111';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '115';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '116';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '117';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '118';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '119';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '130';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '131';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '133';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '134';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '135';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '136';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '137';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '138';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '143';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '150';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '708' AND NUMBER = '177';
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '101';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '125';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '126';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '127';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '128';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '133';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '710' AND MNC = '21' AND NUMBER = '135';
+
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '101';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '120';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '125';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '126';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '127';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '128';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '133';
+DELETE FROM qcril_emergency_source_hard_mcc_table where MCC = '710' AND NUMBER = '135';
+
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='70' where property='qcrildb_version';
+
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '10' AND NUMBER = '113';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '10' AND NUMBER = '115';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '10' AND NUMBER = '118';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '10' AND NUMBER = '1530';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '06' AND NUMBER = '113';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '06' AND NUMBER = '115';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '06' AND NUMBER = '118';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '222' AND MNC = '06' AND NUMBER = '1530';
+
+

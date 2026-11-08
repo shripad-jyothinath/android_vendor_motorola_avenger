@@ -1,6 +1,5 @@
-#
-# Copyright (C) 2026 The LineageOS Project
-# SPDX-License-Identifier: Apache-2.0
-#
-
--include vendor/motorola/sm7750-common/BoardConfigVendor.mk
+# Generated vendor board configuration for stock A171WEH.36-31.
+BOARD_VENDORIMAGE_PARTITION_SIZE := 1098506240
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_EROFS_COMPRESSOR := lz4
+VENDOR_SECURITY_PATCH := 2026-09-01

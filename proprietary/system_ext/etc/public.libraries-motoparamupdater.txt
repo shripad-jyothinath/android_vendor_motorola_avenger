@@ -1,1 +1,0 @@
-libparamupdater_jni.motoparamupdater.so
