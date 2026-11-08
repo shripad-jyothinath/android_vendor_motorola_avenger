@@ -1,0 +1,16 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
+    "soc_id": ["557", "577", "614", "636"],
+    "ro.vendor.hw.revision": ["evt","dvt1","dvt2"]
+  },
+  "stk3bfx_0_private":{
+    "owner": "sns_stk3bfx",
+    ".config":{
+      "owner": "sns_stk3bfx",
+      "irdr_div":{ "type": "int", "ver": "1",
+        "data": "0x10"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+on property:ro.vendor.hw.radio=APEMEAB
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-SN220E.conf
+
+on property:ro.vendor.hw.radio=APEMEAP
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-SN220E.conf
+
+on property:ro.vendor.hw.radio=APEMEABPSM
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-PN560.conf
+
+on property:ro.vendor.hw.radio=APEMEAPPSM
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-PN560.conf
+
+on property:ro.vendor.hw.radio=LATAMBRB
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-SN220E.conf
+
+on property:ro.vendor.hw.radio=LATAMBRP
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-SN220E.conf
+
+on property:ro.vendor.hw.radio=IN
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-PN560.conf
+
+on property:ro.vendor.hw.radio=JP
+   setprop persist.vendor.nfc.config_file_name libnfc-nxp-SN220P.conf

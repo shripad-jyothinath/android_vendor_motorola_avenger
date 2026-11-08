@@ -1,0 +1,1 @@
+--filemsm=/vendor/etc/diag_mdlog/QC_default.cfg --output=/data/vendor/diag_mdlog/logs --qmdl2_v2 --size=100 --number=19 --qdss=16386 --sync=60

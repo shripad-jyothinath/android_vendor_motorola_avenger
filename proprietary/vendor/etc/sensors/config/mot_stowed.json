@@ -1,0 +1,16 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
+    "soc_id": ["457", "482", "552", "530", "531", "540","614","636"]
+  },
+  "mot_stowed":{
+    "owner": "mot_stowed",
+    ".params":{
+      "owner": "mot_stowed",
+      "stowed_state_gpio":{ "type": "int", "ver": "0",
+        "data": "166"
+      }
+    }
+  }
+}

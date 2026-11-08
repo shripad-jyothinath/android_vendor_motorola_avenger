@@ -1,0 +1,31 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=motorola
+ro.product.odm.device=marvel
+ro.product.odm.manufacturer=motorola
+ro.product.odm.model=marvel
+ro.product.odm.name=marvel
+ro.odm.product.cpu.abilist=arm64-v8a
+ro.odm.product.cpu.abilist32=
+ro.odm.product.cpu.abilist64=arm64-v8a
+ro.odm.build.date=Sat Sep 19 20:37:49 CDT 2026
+ro.odm.build.date.utc=1789868269
+ro.odm.build.fingerprint=motorola/marvel/marvel:14/UWE34HV-A171-ST4/24fc3ca:user/release-keys
+ro.odm.build.id=UWE34HV-A171-ST4
+ro.odm.build.tags=release-keys
+ro.odm.build.type=user
+ro.odm.build.version.incremental=24fc3ca
+ro.odm.build.version.release=14
+ro.odm.build.version.release_or_codename=14
+ro.odm.build.version.sdk=34
+####################################
+# from variable ADDITIONAL_ODM_PROPERTIES
+####################################
+ro.vendor.qti.va_odm.support=1
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# end of file
+

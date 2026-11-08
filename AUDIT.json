@@ -1,0 +1,21 @@
+{
+  "stock_files": 2991,
+  "stock_payload_files": 2709,
+  "output_files_under_proprietary": 2709,
+  "copy_rules": 2706,
+  "missing_sources": [],
+  "missing_rules": [],
+  "duplicate_destinations": [],
+  "bad_sources": [],
+  "bin_links": 197,
+  "bin_targets": {
+    "toybox_vendor": 177,
+    "motobox": 11,
+    "toolbox": 9
+  },
+  "install_symlinks": 84,
+  "module_ok": true,
+  "omitted_links": 0,
+  "payload_bytes": 1739995063,
+  "skipped_files": 282
+}

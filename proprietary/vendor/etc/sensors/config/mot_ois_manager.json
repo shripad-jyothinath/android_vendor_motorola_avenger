@@ -1,0 +1,46 @@
+{
+  "config":
+  {
+    "hw_platform": ["Surf", "RCM", "QRD", "HDK"],
+    "soc_id": ["557", "577", "614", "636"]
+  },
+  "ois_manager":{
+    "owner": "ois_manager",
+    ".params":{
+      "owner": "ois_manager",
+      "i2c_bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x03"
+      },
+      "spi_bus_instance":{ "type": "int", "ver": "0",
+        "data": "0x04"
+      },
+      "enable_pwr_gpio_1":{ "type": "int", "ver": "0",
+        "data": "157"
+      },
+      "enable_pwr_gpio_2":{ "type": "int", "ver": "0",
+        "data": "-1"
+      },
+      "gyro_i2c_addr":{ "type": "int", "ver": "0",
+        "data": "104"
+      },
+      "factory_accuracy":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "factory_radius":{ "type": "int", "ver": "0",
+        "data": "125"
+      },
+      "factory_step":{ "type": "int", "ver": "0",
+        "data": "6"
+      },
+      "factory_w0":{ "type": "int", "ver": "0",
+        "data": "100"
+      },
+      "factory_w1":{ "type": "int", "ver": "0",
+        "data": "30"
+      },
+      "factory_w2":{ "type": "int", "ver": "0",
+        "data": "10"
+      }
+    }
+  }
+}
