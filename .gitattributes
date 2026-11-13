@@ -1,0 +1,2 @@
+# The stock vendor payload is byte-exact; never normalize line endings.
+* -text

@@ -10,6 +10,21 @@ PRODUCT_PACKAGES += \
     marvel_vendor_toybox_vendor
 
 PRODUCT_PACKAGES += \
+    CACertService \
+    CneApp \
+    IWlanService \
+    TimeService \
+    TxPwrAdmin \
+    MotoFrameworkResOverlayHWDualSim \
+    MotoFrameworkResOverlayVendorCommon \
+    MotoFrameworkResOverlayWFD \
+    SecureElementResTarget_Vendor \
+    SystemUI__auto_generated_rro_vendor \
+    WifiRes6GhzEnable \
+    WifiResSoftap80211axEnable \
+    framework-res__auto_generated_rro_vendor \
+
+PRODUCT_PACKAGES += \
     marvel_vendor_symlink_00 \
     marvel_vendor_symlink_01 \
     marvel_vendor_symlink_02 \
@@ -97,19 +112,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.google.android.widevine.nonupdatable.apex \
-    vendor/motorola/marvel/proprietary/vendor/app/CACertService/CACertService.apk:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/CACertService.apk \
     vendor/motorola/marvel/proprietary/vendor/app/CACertService/oat/arm64/CACertService.odex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.odex \
     vendor/motorola/marvel/proprietary/vendor/app/CACertService/oat/arm64/CACertService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.vdex \
-    vendor/motorola/marvel/proprietary/vendor/app/CneApp/CneApp.apk:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/CneApp.apk \
     vendor/motorola/marvel/proprietary/vendor/app/CneApp/oat/arm64/CneApp.odex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.odex \
     vendor/motorola/marvel/proprietary/vendor/app/CneApp/oat/arm64/CneApp.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.vdex \
-    vendor/motorola/marvel/proprietary/vendor/app/IWlanService/IWlanService.apk:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/IWlanService.apk \
     vendor/motorola/marvel/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.odex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.odex \
     vendor/motorola/marvel/proprietary/vendor/app/IWlanService/oat/arm64/IWlanService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/IWlanService/oat/arm64/IWlanService.vdex \
-    vendor/motorola/marvel/proprietary/vendor/app/TimeService/TimeService.apk:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/TimeService.apk \
     vendor/motorola/marvel/proprietary/vendor/app/TimeService/oat/arm64/TimeService.odex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.odex \
     vendor/motorola/marvel/proprietary/vendor/app/TimeService/oat/arm64/TimeService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TimeService/oat/arm64/TimeService.vdex \
-    vendor/motorola/marvel/proprietary/vendor/app/TxPwrAdmin/TxPwrAdmin.apk:$(TARGET_COPY_OUT_VENDOR)/app/TxPwrAdmin/TxPwrAdmin.apk \
     vendor/motorola/marvel/proprietary/vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.odex:$(TARGET_COPY_OUT_VENDOR)/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.odex \
     vendor/motorola/marvel/proprietary/vendor/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.vdex:$(TARGET_COPY_OUT_VENDOR)/app/TxPwrAdmin/oat/arm64/TxPwrAdmin.vdex \
     vendor/motorola/marvel/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
@@ -319,7 +329,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
     vendor/motorola/marvel/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
     vendor/motorola/marvel/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
-    vendor/motorola/marvel/proprietary/vendor/bin/system_dlkm_modprobe.sh:$(TARGET_COPY_OUT_VENDOR)/bin/system_dlkm_modprobe.sh \
     vendor/motorola/marvel/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
     vendor/motorola/marvel/proprietary/vendor/bin/test_diag:$(TARGET_COPY_OUT_VENDOR)/bin/test_diag \
     vendor/motorola/marvel/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
@@ -1135,7 +1144,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/motorola/marvel/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/motorola/marvel/proprietary/vendor/etc/tetras/portrait_repair_composite_hd.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite_hd.model \
-    vendor/motorola/marvel/proprietary/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/vintf/manifest_volcano.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_volcano.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/vintf/manifest/ImsRtpService-aidl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ImsRtpService-aidl.xml \
     vendor/motorola/marvel/proprietary/vendor/etc/vintf/manifest/android.hardware.cas-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas-service.xml \
@@ -2772,7 +2780,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
     vendor/motorola/marvel/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
     vendor/motorola/marvel/proprietary/vendor/lib64/vndk/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vndk/libtinyalsa.so \
-    vendor/motorola/marvel/proprietary/odm/etc/build.prop:$(TARGET_COPY_OUT_ODM)/etc/build.prop \
     vendor/motorola/marvel/proprietary/odm/etc/group:$(TARGET_COPY_OUT_ODM)/etc/group \
     vendor/motorola/marvel/proprietary/odm/etc/passwd:$(TARGET_COPY_OUT_ODM)/etc/passwd \
     vendor/motorola/marvel/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
@@ -2788,19 +2795,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/marvel/proprietary/odm/etc/vintf/manifest_bnes.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_bnes.xml \
     vendor/motorola/marvel/proprietary/odm/etc/vintf/manifest_dn.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dn.xml \
     vendor/motorola/marvel/proprietary/odm/etc/vintf/manifest_dnes.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dnes.xml \
-    vendor/motorola/marvel/proprietary/vendor/overlay/MotoFrameworkResOverlayHWDualSim.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayHWDualSim.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/MotoFrameworkResOverlayVendorCommon.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayVendorCommon.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/MotoFrameworkResOverlayWFD.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayWFD.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/SecureElementResTarget_Vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SecureElementResTarget_Vendor.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/SystemUI__auto_generated_rro_vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SystemUI__auto_generated_rro_vendor.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/WifiRes6GhzEnable.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiRes6GhzEnable.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/WifiResSoftap80211axEnable.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResSoftap80211axEnable.apk \
-    vendor/motorola/marvel/proprietary/vendor/overlay/framework-res__auto_generated_rro_vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/framework-res__auto_generated_rro_vendor.apk \
     vendor/motorola/marvel/proprietary/vendor/usr/keylayout/ReadyForAirRemote_Consumer_Control.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ReadyForAirRemote_Consumer_Control.kl \
     vendor/motorola/marvel/proprietary/vendor/usr/keylayout/ReadyForAirRemote_Keyboard.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ReadyForAirRemote_Keyboard.kl \
     vendor/motorola/marvel/proprietary/vendor/usr/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl \
     vendor/motorola/marvel/proprietary/vendor/usr/keylayout/goodix_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix_ts.kl \
-    vendor/motorola/marvel/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks \
-    vendor/motorola/marvel/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop
+    vendor/motorola/marvel/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks
 
 
+# The stock vendor image contains four empty mount-point directories. The
+# source tree cannot represent empty directories, so install zero-byte
+# markers to make the directories exist in the built vendor image.
+PRODUCT_COPY_FILES += \
+    vendor/motorola/marvel/proprietary/vendor/firmware_mnt/.gitkeep:$(TARGET_COPY_OUT_VENDOR)/firmware_mnt/.gitkeep \
+    vendor/motorola/marvel/proprietary/vendor/dsp/.gitkeep:$(TARGET_COPY_OUT_VENDOR)/dsp/.gitkeep \
+    vendor/motorola/marvel/proprietary/vendor/fsg/.gitkeep:$(TARGET_COPY_OUT_VENDOR)/fsg/.gitkeep \
+    vendor/motorola/marvel/proprietary/vendor/bt_firmware/.gitkeep:$(TARGET_COPY_OUT_VENDOR)/bt_firmware/.gitkeep

@@ -228,3 +228,130 @@ LOCAL_MODULE_SYMLINKS := \
     zcat
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := CACertService
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/app/CACertService/CACertService.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := CneApp
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/app/CneApp/CneApp.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := IWlanService
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/app/IWlanService/IWlanService.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := TimeService
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := TxPwrAdmin
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/app/TxPwrAdmin/TxPwrAdmin.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := MotoFrameworkResOverlayHWDualSim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/MotoFrameworkResOverlayHWDualSim.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := MotoFrameworkResOverlayVendorCommon
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/MotoFrameworkResOverlayVendorCommon.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := MotoFrameworkResOverlayWFD
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/MotoFrameworkResOverlayWFD.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SecureElementResTarget_Vendor
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/SecureElementResTarget_Vendor.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SystemUI__auto_generated_rro_vendor
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/SystemUI__auto_generated_rro_vendor.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WifiRes6GhzEnable
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/WifiRes6GhzEnable.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WifiResSoftap80211axEnable
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/WifiResSoftap80211axEnable.apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := framework-res__auto_generated_rro_vendor
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_SRC_FILES := proprietary/vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+include $(BUILD_PREBUILT)
+
